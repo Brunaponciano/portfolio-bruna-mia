@@ -1,0 +1,259 @@
+/* CONFIGURAÇÕES GERAIS */
+
+:root {
+    --fundo: #100716;
+    --roxo: #a855f7;
+    --rosa: #f472d0;
+    --branco: #ffffff;
+    --texto-secundario: #c4b5d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--branco);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* MENU SUPERIOR */
+
+header {
+    width: 100%;
+    padding: 25px 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 16px 25px;
+    background: rgba(168, 85, 247, 0.10);
+    border: 1px solid rgba(192, 132, 252, 0.25);
+    border-radius: 50px;
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    color: var(--branco);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--rosa);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--rosa);
+}
+
+/* APRESENTAÇÃO PRINCIPAL */
+
+#inicio {
+    min-height: 65vh;
+    padding: 10px 8% 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.apresentacao {
+    flex: 1;
+    max-width: 580px;
+    transform: translateY(-90px);
+}
+.apresentacao > p:first-child {
+    color: var(--rosa);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.apresentacao h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.apresentacao h1 span {
+    color: var(--roxo);
+    text-shadow: 0 0 25px rgba(168, 85, 247, 0.55);
+}
+
+.apresentacao h2 {
+    color: var(--rosa);
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.apresentacao > p:not(:first-child) {
+    color: var(--texto-secundario);
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+/* BOTÃO DOS PROJETOS */
+
+.apresentacao > a {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: 30px;
+    background: linear-gradient(100deg, var(--roxo), var(--rosa));
+    color: var(--branco);
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apresentacao > a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(244, 114, 208, 0.4);
+}
+
+/* ESPAÇO DO AVATAR DA BRUNA */
+
+.avatar-bruna {
+    flex: 1;
+    min-height: 430px;
+    max-width: 440px;
+    border-radius: 35px;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(168, 85, 247, 0.30),
+            transparent 70%
+        );
+    border: 1px solid rgba(192, 132, 252, 0.18);
+    box-shadow: 0 0 60px rgba(168, 85, 247, 0.10);
+}
+
+/* SEÇÕES */
+
+#sobre,
+#projetos,
+#contato {
+    padding: 80px 10%;
+    text-align: center;
+    border-top: 1px solid rgba(192, 132, 252, 0.12);
+}
+
+#sobre h2,
+#projetos h2,
+#contato h2 {
+    color: var(--rosa);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#sobre p,
+#projetos p,
+#contato p {
+    color: var(--texto-secundario);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: var(--texto-secundario);
+    border-top: 1px solid rgba(192, 132, 252, 0.12);
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 768px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 7%;
+    }
+
+    .avatar-bruna {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    #sobre,
+    #projetos,
+    #contato {
+        padding: 60px 7%;
+    }
+}/* AVATAR DA BRUNA */
+
+.avatar-bruna {
+    flex: 0 1 320px;
+    max-width: 250px;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-bruna {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.25));
+}/* ASSISTENTE VIRTUAL MIA */
+
+#mia-assistente {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+#imagem-mia {
+    display: block;
+    width: 128px;
+    height: auto;
+}
