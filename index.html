@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Título exibido na aba do navegador -->
     <title>Bruna | Desenvolvedora em Formação</title>
-<link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Conheça o portfólio de Bruna, estudante de Análise e Desenvolvimento de Sistemas.">
 
+    <!-- Folha de estilos externa (CSS) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Descrição para mecanismos de busca (SEO) -->
+    <meta name="description" content="Conheça o portfólio de Bruna, estudante de Análise e Desenvolvimento de Sistemas.">
 </head>
 <body>
 
+    <!-- ============================================================== -->
+    <!-- CABEÇALHO DO SITE COM MENU DE NAVEGAÇÃO -->
+    <!-- ============================================================== -->
     <header>
-        <nav>
+        <nav aria-label="Menu principal de navegação">
+            <!-- Logotipo do Portfólio -->
             <a href="#inicio" class="logo">BRUNA<span>.</span></a>
 
+            <!-- Links para navegação suave pelas seções da página -->
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
@@ -24,40 +34,40 @@
         </nav>
     </header>
 
+    <!-- ============================================================== -->
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+    <!-- ============================================================== -->
     <main>
 
+        <!-- ---------------------------------------------------------- -->
+        <!-- SEÇÃO 1: APRESENTAÇÃO INICIAL (HERO SECTION) -->
+        <!-- ---------------------------------------------------------- -->
         <section id="inicio">
+            <!-- Texto de boas-vindas e introdução -->
             <div class="apresentacao">
                 <p>OLÁ, SEJA BEM-VINDO AO MEU UNIVERSO!</p>
-
                 <h1>Olá, eu sou a <span>Bruna</span>!</h1>
-
                 <h2>Desenvolvedora em formação</h2>
-
                 <p>
                     Transformando curiosidade em conhecimento
                     e ideias em soluções tecnológicas.
                 </p>
-
                 <a href="#projetos">Conheça meus projetos</a>
             </div>
 
+            <!-- Avatar 3D da Bruna em destaque visual -->
             <div class="avatar-bruna">
-
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-<img src="./assents/imagens/bruna-avatar.png" alt="Avatar 3D da Bruna" class="imagem-bruna">
-</div>
+                <img 
+                    src="./assents/imagens/bruna-avatar.png" 
+                    alt="Avatar 3D da Bruna, desenvolvedora em formação" 
+                    class="imagem-bruna"
+                >
+            </div>
         </section>
 
+        <!-- ---------------------------------------------------------- -->
+        <!-- SEÇÃO 2: SOBRE MIM, FORMAÇÃO E CONHECIMENTOS -->
+        <!-- ---------------------------------------------------------- -->
         <section id="sobre">
             <h2>Sobre mim</h2>
 
@@ -90,19 +100,30 @@
                 a vida das pessoas.
             </p>
 
-            <!-- Destaques: Formação e Conhecimentos -->
+            <!-- Destaques: Formação Acadêmica e Tecnologias em Estudo -->
             <div class="destaques-sobre">
+                <!-- Card 1: Formação Acadêmica -->
                 <div class="card-destaque">
                     <div class="card-destaque-icone">🎓</div>
                     <h3>Formação Acadêmica</h3>
-                    <p class="card-destaque-titulo">Análise e Desenvolvimento de Sistemas <span class="badge-estudando">(Cursando)</span></p>
-                    <p class="card-destaque-desc">Estou estudando atualmente no Ensino Superior, com foco em desenvolvimento de software, lógica de programação e tecnologias para resolução de problemas reais.</p>
+                    <p class="card-destaque-titulo">
+                        Análise e Desenvolvimento de Sistemas 
+                        <span class="badge-estudando">(Cursando)</span>
+                    </p>
+                    <p class="card-destaque-desc">
+                        Estou estudando atualmente no Ensino Superior, com foco em 
+                        desenvolvimento de software, lógica de programação e tecnologias 
+                        para resolução de problemas reais.
+                    </p>
                 </div>
 
+                <!-- Card 2: Conhecimentos e Tecnologias em Estudo -->
                 <div class="card-destaque">
                     <div class="card-destaque-icone">💻</div>
                     <h3>Conhecimentos & Tecnologias</h3>
-                    <p class="card-destaque-desc">Tecnologias que estou estudando ativamente no momento e praticando na minha evolução:</p>
+                    <p class="card-destaque-desc">
+                        Tecnologias que estou estudando ativamente no momento e praticando na minha evolução:
+                    </p>
                     <div class="skills-tags">
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
@@ -117,13 +138,17 @@
             </div>
         </section>
 
-        <!-- SEÇÃO DE PROJETOS -->
+        <!-- ---------------------------------------------------------- -->
+        <!-- SEÇÃO 3: PROJETOS E ESTUDOS PRÁTICOS -->
+        <!-- ---------------------------------------------------------- -->
         <section id="projetos">
             <h2>Meus projetos</h2>
-            <p class="subtitulo-secao">Conheça meus projetos em andamento e as ideias planejadas para a minha jornada de aprendizado:</p>
+            <p class="subtitulo-secao">
+                Conheça meus projetos em andamento e as ideias planejadas para a minha jornada de aprendizado:
+            </p>
 
             <div class="grid-projetos">
-                <!-- Projeto 1: CUIDAR+ -->
+                <!-- Projeto 1: CUIDAR+ (Em desenvolvimento com Python) -->
                 <article class="card-projeto">
                     <div class="projeto-header">
                         <span class="badge-status">Em desenvolvimento</span>
@@ -131,7 +156,8 @@
                     </div>
                     <h3>CUIDAR+</h3>
                     <p>
-                        Sistema em Python que estou desenvolvendo para auxiliar na organização de medicamentos, registro de horários e doses, além do acompanhamento prático de consultas de saúde.
+                        Sistema em Python que estou desenvolvendo para auxiliar na organização de medicamentos, 
+                        registro de horários e doses, além do acompanhamento prático de consultas de saúde.
                     </p>
                     <div class="projeto-techs">
                         <span>Python</span>
@@ -141,12 +167,16 @@
                     <div class="projeto-links">
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                             <span>Ver no GitHub</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
                         </a>
                     </div>
                 </article>
 
-                <!-- Projeto 2: Jogo da Memória -->
+                <!-- Projeto 2: Jogo da Memória (Planejado para estudos futuros de Front-end) -->
                 <article class="card-projeto">
                     <div class="projeto-header">
                         <span class="badge-status badge-planejamento">Em Planejamento</span>
@@ -154,7 +184,8 @@
                     </div>
                     <h3>Jogo da Memória</h3>
                     <p>
-                        Projeto planejado para meus próximos estudos práticos de desenvolvimento web, com o objetivo de treinar manipulação dinâmica do DOM, estilização e lógica de programação em JavaScript.
+                        Projeto planejado para meus próximos estudos práticos de desenvolvimento web, 
+                        com o objetivo de treinar manipulação dinâmica do DOM, estilização e lógica de programação em JavaScript.
                     </p>
                     <div class="projeto-techs">
                         <span>HTML5</span>
@@ -166,7 +197,7 @@
                     </div>
                 </article>
 
-                <!-- Projeto 3: APS Digital -->
+                <!-- Projeto 3: APS Digital (Projeto Conceitual de Saúde & Tecnologia) -->
                 <article class="card-projeto">
                     <div class="projeto-header">
                         <span class="badge-status badge-conceito">Projeto Conceitual</span>
@@ -174,7 +205,8 @@
                     </div>
                     <h3>APS Digital</h3>
                     <p>
-                        Projeto conceitual voltado à modernização e organização do acesso aos serviços da Atenção Primária à Saúde, integrando a experiência comunitária à inovação tecnológica.
+                        Projeto conceitual voltado à modernização e organização do acesso aos serviços da Atenção Primária à Saúde, 
+                        integrando a experiência comunitária à inovação tecnológica.
                     </p>
                     <div class="projeto-techs">
                         <span>Saúde Pública</span>
@@ -188,15 +220,22 @@
             </div>
         </section>
 
-        <!-- SEÇÃO DE CONTATO -->
+        <!-- ---------------------------------------------------------- -->
+        <!-- SEÇÃO 4: CONTATO PROFISSIONAL & REDES -->
+        <!-- ---------------------------------------------------------- -->
         <section id="contato">
             <h2>Vamos nos conectar?</h2>
-            <p class="subtitulo-secao">Estou sempre aberta a trocar ideias, aprender e conversar sobre oportunidades na área de tecnologia.</p>
+            <p class="subtitulo-secao">
+                Estou sempre aberta a trocar ideias, aprender e conversar sobre oportunidades na área de tecnologia.
+            </p>
 
             <div class="grid-contatos">
+                <!-- Card GitHub -->
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="card-contato">
                     <div class="contato-icone">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
                     </div>
                     <div class="contato-info">
                         <strong>GitHub</strong>
@@ -204,9 +243,14 @@
                     </div>
                 </a>
 
+                <!-- Card LinkedIn -->
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="card-contato">
                     <div class="contato-icone">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
                     </div>
                     <div class="contato-info">
                         <strong>LinkedIn</strong>
@@ -214,13 +258,17 @@
                     </div>
                 </a>
 
+                <!-- Card E-mail -->
                 <a href="mailto:contato@exemplo.com" class="card-contato">
                     <div class="contato-icone">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
                     </div>
                     <div class="contato-info">
                         <strong>E-mail</strong>
-                        <span>Envie uma mensagem</span>
+                        <span>Envie uma mensagem direta</span>
                     </div>
                 </a>
             </div>
@@ -228,23 +276,31 @@
 
     </main>
 
+    <!-- ============================================================== -->
+    <!-- RODAPÉ DO SITE -->
+    <!-- ============================================================== -->
     <footer>
         <p>Desenvolvido por Bruna 💜</p>
     </footer>
 
-    <!-- Assistente Virtual Mia (Botão Interativo) -->
+    <!-- ============================================================== -->
+    <!-- ASSISTENTE VIRTUAL MIA (BOTÃO FLUTUANTE & JANELA DE CONVERSA) -->
+    <!-- ============================================================== -->
+
+    <!-- Botão com o Avatar da Mia (Fixo no canto inferior esquerdo) -->
     <div id="mia-assistente" role="button" tabindex="0" aria-label="Abrir conversa com a Mia, assistente virtual">
+        <!-- Balãozinho de convite interativo -->
         <span class="mia-balao-dica">Fale comigo! ✨</span>
         <img
             src="./assents/imagens/mia-avatar.png"
-            alt="Avatar da Mia"
+            alt="Avatar da Mia, assistente virtual da Bruna"
             id="imagem-mia"
         >
     </div>
 
-    <!-- Janela de conversa da Mia -->
+    <!-- Janela de Conversa da Mia (Abre ao clicar no avatar) -->
     <aside id="mia-chat" class="mia-chat-oculto" aria-label="Janela de conversa com a Mia">
-        <!-- Cabeçalho do Chat -->
+        <!-- Cabeçalho da conversa com miniatura e botão de fechar -->
         <div class="mia-chat-header">
             <div class="mia-chat-perfil">
                 <img src="./assents/imagens/mia-avatar.png" alt="Avatar da Mia" class="mia-avatar-topo">
@@ -253,15 +309,16 @@
                     <span class="mia-status"><span class="mia-status-ponto"></span> Online</span>
                 </div>
             </div>
+            <!-- Botão para fechar o chat -->
             <button id="mia-btn-fechar" type="button" aria-label="Fechar conversa">&times;</button>
         </div>
 
-        <!-- Histórico de Mensagens -->
+        <!-- Área onde os balões de conversa aparecem dinamicamente -->
         <div id="mia-mensagens" class="mia-chat-mensagens">
-            <!-- Mensagens são adicionadas dinamicamente via JavaScript -->
+            <!-- As mensagens são injetadas pelo JavaScript via script.js -->
         </div>
 
-        <!-- Perguntas Sugeridas / Atalhos Rápidos -->
+        <!-- Botões de perguntas sugeridas (Chips com atalhos de clique rápido) -->
         <div class="mia-sugestoes">
             <span class="mia-sugestoes-titulo">Sugestões de perguntas:</span>
             <div class="mia-sugestoes-botoes">
@@ -273,7 +330,7 @@
             </div>
         </div>
 
-        <!-- Campo de Digitação e Envio -->
+        <!-- Formulário para digitação e envio de perguntas -->
         <form id="mia-form" class="mia-chat-input-area">
             <input
                 type="text"
@@ -283,6 +340,7 @@
                 aria-label="Mensagem para a Mia"
             >
             <button type="submit" id="mia-btn-enviar" aria-label="Enviar mensagem">
+                <!-- Ícone de envio estilizado em formato de aviãozinho -->
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13"></line>
                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -291,6 +349,7 @@
         </form>
     </aside>
 
-<script src="script.js"></script>
+    <!-- Conexão do script JavaScript responsável pela inteligência da Mia -->
+    <script src="script.js"></script>
 </body>
 </html>
