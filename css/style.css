@@ -230,6 +230,19 @@ nav ul a:hover {
     text-align: left !important;
 }
 
+.badge-estudando {
+    display: inline-block;
+    font-size: 0.78rem;
+    color: var(--texto-secundario);
+    font-weight: normal;
+    margin-left: 6px;
+    background: rgba(168, 85, 247, 0.15);
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(192, 132, 252, 0.25);
+    vertical-align: middle;
+}
+
 .card-destaque-desc {
     color: var(--texto-secundario) !important;
     font-size: 0.95rem;
@@ -309,6 +322,12 @@ nav ul a:hover {
     background: rgba(192, 132, 252, 0.15);
     color: #c084fc;
     border-color: rgba(192, 132, 252, 0.35);
+}
+
+.badge-status.badge-planejamento {
+    background: rgba(244, 114, 208, 0.12);
+    color: var(--rosa);
+    border-color: rgba(244, 114, 208, 0.35);
 }
 
 .projeto-categoria {

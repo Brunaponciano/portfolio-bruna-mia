@@ -135,17 +135,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. Formação Acadêmica
         if (p.includes('formacao') || p.includes('faculdade') || p.includes('estuda') || p.includes('curso') || p.includes('ads') || p.includes('graduacao')) {
-            return '🎓 **Formação Acadêmica da Bruna:**\n\nEla cursa o Ensino Superior em **Análise e Desenvolvimento de Sistemas (ADS)**.\n\nDurante o curso e em estudos contínuos, ela desenvolve conhecimentos sólidos em lógica de programação, arquitetura de software, desenvolvimento web e Inteligência Artificial.';
+            return '🎓 **Formação Acadêmica da Bruna:**\n\nA Bruna está **estudando atualmente** no Ensino Superior, cursando **Análise e Desenvolvimento de Sistemas (ADS)**.\n\nEla está focada no aprendizado contínuo de lógica de programação, arquitetura de software, desenvolvimento web e Inteligência Artificial.';
         }
 
         // 5. Conhecimentos e Tecnologias
         if (p.includes('habilidade') || p.includes('habilidades') || p.includes('tecnologia') || p.includes('tecnologias') || p.includes('skills') || p.includes('linguagem') || p.includes('conhecimento') || p.includes('python') || p.includes('java') || p.includes('html') || p.includes('css') || p.includes('javascript') || p.includes('git')) {
-            return '💻 **Conhecimentos e Tecnologias:**\n\n• **Front-end:** HTML5, CSS3, JavaScript e interfaces responsivas.\n• **Back-end & Lógica:** Python e Java.\n• **Ferramentas:** Git, GitHub e VS Code.\n• **Interesses:** Inteligência Artificial e sistemas de informação para a saúde.';
+            return '💻 **Tecnologias que a Bruna está Estudando:**\n\n• **Front-end:** HTML5, CSS3 e JavaScript (estudando e praticando).\n• **Back-end & Lógica:** Python e Java (em aprendizado ativo).\n• **Ferramentas:** Git, GitHub e VS Code.\n• **Interesses:** Inteligência Artificial e tecnologia aplicada à saúde pública.';
         }
 
         // 6. Projetos
         if (p.includes('projeto') || p.includes('projetos') || p.includes('cuidar') || p.includes('memoria') || p.includes('aps') || p.includes('trabalho')) {
-            return '📂 **Projetos em Destaque:**\n\n1. **CUIDAR+**: Sistema em Python para organização de medicamentos, registro de doses e acompanhamento de consultas.\n2. **Jogo da Memória**: Projeto interativo com HTML, CSS e JavaScript para praticar manipulação do DOM.\n3. **APS Digital**: Projeto conceitual voltado à melhoria dos fluxos e atendimentos na Atenção Primária à Saúde.\n\nConfira todos os detalhes rolando a página até a seção de Projetos!';
+            return '📂 **Projetos e Estudos da Bruna:**\n\n1. **CUIDAR+**: Sistema em desenvolvimento em Python para organização de medicamentos e consultas.\n2. **Jogo da Memória**: Projeto planejado como próximo objetivo de estudo prático (ainda não desenvolvido).\n3. **APS Digital**: Projeto conceitual inspirado na vivência na Atenção Primária à Saúde.\n\nConfira os detalhes na seção de Projetos do site!';
         }
 
         // 7. Contato e Redes
